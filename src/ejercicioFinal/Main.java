@@ -70,8 +70,35 @@ public class Main {
         list.add("Manzana");
         list.add("Frutilla");
 
+
         LinkedList<String> linkList = new LinkedList<String>();
-        
+
+        linkList.addAll(list);
+
+        list.forEach(System.out::println);
+        linkList.forEach(System.out::println);
+
+        //Crea un ArrayList de tipo int, y, utilizando un bucle rellénalo con elementos 1..10. A continuación,
+        // con otro bucle, recórrelo y elimina los numeros pares. Por último, vuelve a recorrerlo y muestra
+        // el ArrayList final. Si te atreves, puedes hacerlo en menos pasos, siempre y cuando cumplas el
+        // primer "for" de relleno.
+
+        ArrayList<Integer> list1 = new ArrayList<Integer>(11);
+
+        for(int i = 1; 10 >= i; i++){
+            list1.add(i);
+        }
+
+        for(int i = 1; 10 >= i; i++){
+            if ((list1.get(i)%2)==0){
+                list1.remove(i);
+            }
+        }
+
+        list1.forEach(System.out::println);
+
+
+
 
     }
 
