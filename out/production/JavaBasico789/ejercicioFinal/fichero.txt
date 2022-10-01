@@ -1,0 +1,3 @@
+viento
+lluvia
+sol
